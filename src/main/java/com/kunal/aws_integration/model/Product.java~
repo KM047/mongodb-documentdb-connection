@@ -1,0 +1,35 @@
+package com.kunal.aws_integration.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document(collection = "products")
+@Data
+public class Product {
+
+    @Id
+    private String id;
+
+    /**
+     * Set up data Members that correspond to fields in the products collection
+     */
+
+    private String name;
+    private String sku;
+    private String description;
+    private int inventory;
+    private String category;
+
+    public Product(String name, String number, String s, int i, String fashion) {
+        this.name = name;
+        this.sku = number;
+        this.description = s;
+        this.inventory = i;
+        this.category = fashion;
+    }
+}
