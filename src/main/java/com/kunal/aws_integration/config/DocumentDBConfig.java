@@ -1,13 +1,11 @@
-package com.kunal.aws_integration.configuration;
+package com.kunal.aws_integration.config;
 
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
 
@@ -23,8 +21,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Slf4j
-@Configuration
-@RequiredArgsConstructor
+//@Configuration
+//@RequiredArgsConstructor
 public class DocumentDBConfig extends AbstractMongoClientConfiguration {
 
 

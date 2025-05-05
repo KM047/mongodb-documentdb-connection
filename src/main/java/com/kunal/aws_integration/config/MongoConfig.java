@@ -1,4 +1,4 @@
-package com.kunal.aws_integration.configuration;
+package com.kunal.aws_integration.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
